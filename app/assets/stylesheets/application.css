@@ -21,9 +21,10 @@
  .response {
    background-color: bisque;
    padding: 5px 10px;
+   border-left: 5px solid gray;
  }
 
  .question {
-   background-color: lavender;
    padding: 5px 10px;
+   border-left: 5px solid gray;
  }
