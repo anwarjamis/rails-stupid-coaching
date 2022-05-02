@@ -1,6 +1,8 @@
-<h1>Stupid coaching</h1>
-<h3><%= @params %></h3>
-<p>- You</p>
+<h1 class="text-center">Stupid coaching</h1>
+<div class="question">
+  <h3><%= @params %></h3>
+  <p>- You</p>
+</div>
 <% if @params == 'I am going to work'
       response = 'Great!'
     elsif @params[-1] == '?'
@@ -9,5 +11,7 @@
       response = "I don't care, get dressed and go to work!"
     end
 %>
-<h3><%= response %></h3>
-<p>- Your coach</p>
+<div class="response">
+  <h3><%= response %></h3>
+  <p>- Your coach</p>
+</div>
