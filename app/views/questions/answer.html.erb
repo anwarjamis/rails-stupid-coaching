@@ -1,0 +1,13 @@
+<h1>Stupid coaching</h1>
+<h3><%= @params %></h3>
+<p>- You</p>
+<% if @params == 'I am going to work'
+      response = 'Great!'
+    elsif @params[-1] == '?'
+      response = 'Silly question, get dressed and go to work!'
+    else
+      response = "I don't care, get dressed and go to work!"
+    end
+%>
+<h3><%= response %></h3>
+<p>- Your coach</p>
